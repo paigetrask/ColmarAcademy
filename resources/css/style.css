@@ -12,7 +12,7 @@ header {
    width: 100%;
    background-color: white;
    justify-content: space-between;
-   padding-left: 24px;
+   
    align-content: center;
 }
 
@@ -20,6 +20,7 @@ header {
    display: inline-flex;
    align-items: center;
    font-size: 24px;
+   padding-left: 24px;
    
 }
 
@@ -34,7 +35,8 @@ header {
 .header-right {
     display: inline-flex;
     align-items: center;
-    padding-right: 16px;
+    padding-right: 24px;
+
 }
 
 ul {
@@ -53,12 +55,35 @@ a {
 }
 /* BANNER */
 .banner {
-    padding: 32px 24px;
-    width: 100%;
+    position: relative;
+    max-width: 100%;
     background-color: lightgray;
-
+    display: flex;
+    align-items: center;
 }
 
 .banner img {
+    padding: 32px 24px;
     width: 60%;
 }
+
+.banner-button {
+    color: rgb(61, 61, 61);
+    
+}
+
+.banner-button h1 {
+    font-size: 45px;
+}
+ .banner-button p {
+     font-size: 25px;
+     font-weight: 525;
+ }
+
+ button {
+     padding: 12px 160px;
+     color: white;
+     background-color: rgb(61, 61, 61);
+     border: none;
+     font-size: 24px;
+ }
