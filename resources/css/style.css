@@ -57,9 +57,10 @@ a {
 .banner {
     position: relative;
     max-width: 100%;
-    background-color: lightgray;
+    background-color: rgb(229, 226, 226);
     display: flex;
     align-items: center;
+    border-bottom: white solid 1px;
 }
 
 .banner img {
@@ -81,9 +82,83 @@ a {
  }
 
  button {
-     padding: 12px 160px;
+     padding: 12px;
      color: white;
      background-color: rgb(61, 61, 61);
      border: none;
      font-size: 24px;
+     width: 100%;
  }
+
+ /* INFORMATION */
+
+ .information {
+     display: flex;
+ }
+
+ .information-left {
+     padding: 32px 24px 32px 24px;
+     color:rgb(61, 61, 61);
+     width: 62%;
+     border-right:rgb(229, 226, 226) solid 1px;
+ }
+
+ .information-left img {
+     width: 100%;
+     
+ }
+
+ .information-left h2 {
+    font-size: 40px;
+    
+    font-weight: bold;
+     
+}
+
+.quote {
+    padding-bottom: 24px;
+    font-size: 19px;
+}
+
+.information-right {
+    width: 38%;
+    padding-top: 16px;
+    
+    color:rgb(61, 61, 61);
+    border-left: white solid 1px;
+}
+
+.information-right a {
+    color: lightskyblue;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: rgb(229, 226, 226) solid 1px;
+    border-top: rgb(229, 226, 226) solid 1px;
+    margin-top: 2px;
+}
+
+.img-container {
+    width: 35%;
+    margin-right: 24px;
+}
+
+.info-sections img {
+    max-width: 100%;
+    padding: 16px;
+    
+}
+
+.info-sections h4 {
+    font-size: 24px;
+}
+ 
+#orientation {
+    border-top: none;
+}
+#guest-lecture {
+    background-color:rgb(229, 226, 226);
+}
