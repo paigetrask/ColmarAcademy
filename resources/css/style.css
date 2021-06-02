@@ -110,14 +110,17 @@ a {
 
  .information-left h2 {
     font-size: 40px;
-    
     font-weight: bold;
-     
 }
 
 .quote {
     padding-bottom: 24px;
     font-size: 19px;
+    color: rgb(112, 111, 111);
+}
+
+.information-left p {
+    color: rgb(112, 111, 111);
 }
 
 .information-right {
@@ -156,9 +159,60 @@ a {
     font-size: 24px;
 }
  
+.info-sections p {
+    color: rgb(112, 111, 111);
+}
 #orientation {
     border-top: none;
 }
 #guest-lecture {
     background-color:rgb(229, 226, 226);
+}
+
+/* START LEARNING */
+
+
+.learning {
+    background-color:rgb(229, 226, 226);
+    width: 100%;
+}
+
+.learning-header h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(61, 61, 61);
+    text-align: center;
+    position: relative;
+    top: 44px;
+}
+
+.course-container {
+    display: inline-flex;
+    padding: 32px 72px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-box {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px;
+    width: 350px;
+    height: auto;
+    background-color: white;
+}
+
+.course-box-bottom {
+    padding: 16px 16px 24px 16px;
+}
+
+#box-header {
+    font-size: 24px;
+    color:rgb(61, 61, 61);
+    font-weight: 510;
+}
+
+.course-box p {
+    color: rgb(112, 111, 111);
+    font-size: 18px;
 }
