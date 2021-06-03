@@ -103,7 +103,6 @@ a {
      padding: 32px 24px 32px 24px;
      color:rgb(61, 61, 61);
      width: 62%;
-     border-right:rgb(229, 226, 226) solid 1px;
  }
 
  .information-left img {
@@ -144,6 +143,7 @@ a {
     align-items: center;
     border-bottom: rgb(229, 226, 226) solid 1px;
     border-top: rgb(229, 226, 226) solid 1px;
+    border-left:rgb(229, 226, 226) solid 1px;
     margin-top: 2px;
 }
 
@@ -155,7 +155,6 @@ a {
 .info-sections img {
     max-width: 100%;
     padding: 16px;
-    
 }
 
 .info-sections h4 {
@@ -222,3 +221,71 @@ a {
 
 /* Thesis Exhbition*/
 
+.thesis {
+    border-bottom: rgb(229, 226, 226) solid 1px;
+    border-left:white solid 1px;
+    border-right: white solid 1px:
+}
+.thesis-container {
+    display: flex;
+}
+
+.thesis-header h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(61, 61, 61);
+    text-align: center;
+    
+}
+    
+.thesis-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 24px 32px 24px;
+}
+
+.thesis-left h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(61, 61, 61);
+}
+
+.thesis-left p {
+    font-size: 19px;
+    color: rgb(112, 111, 111);
+}
+
+video {
+    max-width: 100%;
+}
+.thesis-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.thesis-right img {
+    max-width: 100%;
+    padding: 16px;
+}
+
+.thesis-sections {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: rgb(229, 226, 226) solid 1px;
+    border-left: rgb(229, 226, 226) solid 1px;
+}
+
+.thesis-sections h2 {
+    color:rgb(61, 61, 61);
+}
+
+.thesis-sections p {
+    color: rgb(112, 111, 111);
+}
+
+#fisma {
+    background-color:rgb(229, 226, 226);
+}
