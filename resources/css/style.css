@@ -90,6 +90,7 @@ a {
      border: none;
      font-size: 24px;
      width: 100%;
+     cursor: pointer;
  }
 
  /* INFORMATION */
@@ -144,7 +145,11 @@ a {
     border-bottom: rgb(229, 226, 226) solid 1px;
     border-top: rgb(229, 226, 226) solid 1px;
     border-left:rgb(229, 226, 226) solid 1px;
-    margin-top: 2px;
+    margin-top: 16px;
+}
+
+.info-sections:hover {
+    background-color: rgb(229, 226, 226);
 }
 
 .img-container {
@@ -164,12 +169,7 @@ a {
 .info-sections p {
     color: rgb(112, 111, 111);
 }
-#orientation {
-    border-top: none;
-}
-#guest-lecture {
-    background-color:rgb(229, 226, 226);
-}
+
 
 /* START LEARNING */
 
@@ -203,6 +203,9 @@ a {
     height: auto;
     background-color: white;
 }
+.course-box:hover {
+    box-shadow: black 1px;
+}
 
 .course-box-bottom {
     padding: 16px 16px 24px 16px;
@@ -224,7 +227,7 @@ a {
 .thesis {
     border-bottom: rgb(229, 226, 226) solid 1px;
     border-left:white solid 1px;
-    border-right: white solid 1px:
+    border-right: white solid 1px;
 }
 .thesis-container {
     display: flex;
@@ -275,7 +278,9 @@ video {
     justify-content: flex-start;
     align-items: center;
     border-bottom: rgb(229, 226, 226) solid 1px;
+    border-top: rgb(229, 226, 226) solid 1px;
     border-left: rgb(229, 226, 226) solid 1px;
+    margin-bottom: 10px;
 }
 
 .thesis-sections h2 {
@@ -286,6 +291,15 @@ video {
     color: rgb(112, 111, 111);
 }
 
-#fisma {
+.thesis-sections:hover {
     background-color:rgb(229, 226, 226);
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    color:rgb(138, 137, 137);
 }
