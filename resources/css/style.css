@@ -14,7 +14,6 @@ header {
    width: 100%;
    background-color: white;
    justify-content: space-between;
-   
    align-content: center;
 }
 
@@ -23,7 +22,6 @@ header {
    align-items: center;
    font-size: 24px;
    padding-left: 24px;
-   
 }
 
 .colmar {
@@ -38,7 +36,6 @@ header {
     display: inline-flex;
     align-items: center;
     padding-right: 24px;
-
 }
 
 ul {
@@ -55,14 +52,20 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.mobile {
+    display: none;
+}
+
 /* BANNER */
 .banner {
     position: relative;
-    max-width: 100%;
-    background-color: rgb(229, 226, 226);
+    width: 100%;
+    background-color: rgb(241, 238, 212);
     display: flex;
     align-items: center;
     border-bottom: white solid 1px;
+    margin: 0;
 }
 
 .banner img {
@@ -71,8 +74,7 @@ a {
 }
 
 .banner-button {
-    color: rgb(61, 61, 61);
-    
+    color: rgb(61, 61, 61);   
 }
 
 .banner-button h1 {
@@ -85,12 +87,16 @@ a {
 
  button {
      padding: 12px;
-     color: white;
-     background-color: rgb(61, 61, 61);
+     color: rgb(61, 61, 61);
+     background-color: rgb(233, 223, 132);
      border: none;
      font-size: 24px;
-     width: 100%;
+     width: 300px;
      cursor: pointer;
+ }
+
+ button:hover {
+    background-color: rgb(228, 215, 99);
  }
 
  /* INFORMATION */
@@ -98,6 +104,7 @@ a {
  .information {
      display: flex;
      width: 100%;
+     margin: 0;
  }
 
  .information-left {
@@ -135,7 +142,7 @@ a {
 }
 
 .information-right a {
-    color: lightskyblue;
+    color: rgb(179, 103, 32);
 }
 
 .info-sections {
@@ -149,7 +156,7 @@ a {
 }
 
 .info-sections:hover {
-    background-color: rgb(229, 226, 226);
+    background-color: rgb(199, 230, 224);
 }
 
 .img-container {
@@ -164,6 +171,8 @@ a {
 
 .info-sections h4 {
     font-size: 24px;
+    font-weight: 510;
+    margin: 0;
 }
  
 .info-sections p {
@@ -175,8 +184,9 @@ a {
 
 
 .learning {
-    background-color:rgb(229, 226, 226);
+    background-color: rgb(241, 238, 212);
     width: 100%;
+    margin: 0;
 }
 
 .learning-header h2 {
@@ -220,6 +230,10 @@ a {
 .course-box p {
     color: rgb(112, 111, 111);
     font-size: 18px;
+}
+
+.learning-mobile {
+    display: none;
 }
 
 /* Thesis Exhbition*/
@@ -285,6 +299,8 @@ video {
 
 .thesis-sections h2 {
     color:rgb(61, 61, 61);
+    font-size: 24px;
+    font-weight: 510;
 }
 
 .thesis-sections p {
@@ -292,7 +308,7 @@ video {
 }
 
 .thesis-sections:hover {
-    background-color:rgb(229, 226, 226);
+    background-color: rgb(199, 230, 224);
 }
 
 /*FOOTER*/
@@ -303,3 +319,125 @@ footer {
     padding: 16px 24px;
     color:rgb(138, 137, 137);
 }
+
+/* MEDIA QUERY*/
+
+@media only screen and (max-width: 800px) {
+    /*HEADER*/
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        width: 100%;
+    }
+
+    .mobile a {
+        margin: auto;
+    }
+
+    .header-right, .header-left {
+        display: none;
+    }
+
+    /*BANNER*/
+
+    .banner {
+        display: block;
+        padding: none;
+        width: 100%;
+    }
+
+    .banner img {
+        padding: 0;
+        width: 100%;
+    }
+
+    .banner-button {
+        padding: 0 16px 32px 16px; 
+    }
+
+    /*INFORMATION*/
+
+    .information-left {
+        display: none;
+    }
+
+    .information-right {
+        width: 100%;
+    }
+
+    .info-sections {
+        display: block;
+        max-width: 100%;
+        border: none;
+        padding: 16px;
+    }
+    .img-container {
+        width: 100%;
+    }
+
+    .desktop img {
+        display: none;
+    }
+
+    .course-container {
+        display: none;
+    }
+
+    .learning-mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        
+    }
+
+    #mobile-button {
+        margin: 8px auto;
+        padding: 24px 16px;
+        background-color: rgb(233, 223, 132);
+        width: 90%;
+        font-size: 24px;
+        color:rgb(61, 61, 61);
+        border: none;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    #mobile-button:hover {
+        background-color: rgb(228, 215, 99);
+    }
+    /*THESIS*/
+
+    .thesis-left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .thesis-left h2 {
+        display: none;
+    }
+
+    .thesis-left p {
+        display: none;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .thesis-right {
+        display: none;
+    }
+
+    /*FOOTER*/
+
+    .mobile-footer {
+        display: none;
+    }
+}
+
+
+
+
+
+
