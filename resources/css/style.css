@@ -7,7 +7,7 @@ body {
     padding: 0;
     margin: 0;
 }
-/* HEADER */
+                                /* HEADER */
 header {
    display: flex;
    height: 64px;
@@ -57,7 +57,7 @@ a {
     display: none;
 }
 
-/* BANNER */
+                                    /* BANNER */
 .banner {
     position: relative;
     width: 100%;
@@ -99,7 +99,7 @@ a {
     background-color: rgb(228, 215, 99);
  }
 
- /* INFORMATION */
+                                    /* INFORMATION */
 
  .information {
      display: flex;
@@ -180,7 +180,7 @@ a {
 }
 
 
-/* START LEARNING */
+                                    /* START LEARNING */
 
 
 .learning {
@@ -236,7 +236,7 @@ a {
     display: none;
 }
 
-/* Thesis Exhbition*/
+                                    /* THESIS EXHIBITION*/
 
 .thesis {
     border-bottom: rgb(229, 226, 226) solid 1px;
@@ -311,19 +311,20 @@ video {
     background-color: rgb(199, 230, 224);
 }
 
-/*FOOTER*/
+                               /*FOOTER*/
 
 footer {
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
     color:rgb(138, 137, 137);
-}
+}           
+    
 
-/* MEDIA QUERY*/
+                            /* MEDIA QUERY*/
 
 @media only screen and (max-width: 800px) {
-    /*HEADER*/
+                                /*HEADER*/
     .mobile {
         display: flex;
         justify-content: space-around;
@@ -339,7 +340,7 @@ footer {
         display: none;
     }
 
-    /*BANNER*/
+                                /*BANNER*/
 
     .banner {
         display: block;
@@ -356,7 +357,7 @@ footer {
         padding: 0 16px 32px 16px; 
     }
 
-    /*INFORMATION*/
+                                /*INFORMATION*/
 
     .information-left {
         display: none;
@@ -379,6 +380,8 @@ footer {
     .desktop img {
         display: none;
     }
+
+                                /*START LEARNING*/
 
     .course-container {
         display: none;
@@ -406,7 +409,7 @@ footer {
     #mobile-button:hover {
         background-color: rgb(228, 215, 99);
     }
-    /*THESIS*/
+                                    /*THESIS*/
 
     .thesis-left {
         width: 100%;
@@ -429,7 +432,7 @@ footer {
         display: none;
     }
 
-    /*FOOTER*/
+                                    /*FOOTER*/
 
     .mobile-footer {
         display: none;
